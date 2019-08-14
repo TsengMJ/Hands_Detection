@@ -1,2 +1,13 @@
 # Hands_Detection
-Stereo camera with structure light
+We gonna use opencv to control cameras 
+
+---
+Install uvcdynctrl
+```
+sudo apt install uvcdynctrl
+```
+
+Use uvcdynctrl to get your camera's resolution
+```
+uvcdynctrl -f
+```
