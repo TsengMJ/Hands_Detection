@@ -1,9 +1,11 @@
+## Usage python3 recore_image full/path/to/a/folder newFolderName
+
 import cv2
 import sys
 import os
 
-Path = "/home/mj/LuxVision/"
-Folder_Name = sys.argv[1]
+Path = sys.argv[1]
+Folder_Name = sys.argv[2]
 Folder_path = os.path.join(Path, Folder_Name)
 
 if not os.path.exists(Folder_path):
