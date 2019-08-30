@@ -17,7 +17,22 @@ sudo chmod +x <Anaconda-installer-name>
 source ~/.bashrc
 conda create --name py36 python=3.6
 conda activte py36
+conda install jupyter
 ```
+
+## TsesorFlow-Gpu and Cuda
+Make sure you follow the steps [Here](https://www.tensorflow.org/install/gpu) carefully
+
+
+## OpenCV
+Make sure you follow the steps [Here](https://docs.opencv.org/4.1.1/d2/de6/tutorial_py_setup_in_ubuntu.html) carefully.
+Also install opencv in your environment
+```
+conda activate py36
+conda install -c conda-forge opencv 
+```
+
+
 ## Yolov3
 Download yolov3 and darknet we need. See more detail [[Here](https://pjreddie.com/darknet/yolo/)]
 
@@ -27,7 +42,6 @@ git clone https://github.com/pjreddie/darknet.git
 cd darknet
 make
 ```
-
 
 
 
