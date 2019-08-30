@@ -5,7 +5,7 @@ We Present yolo based hand tracking.
 Plz make sure you are have an python3.6 environment or folllow the steps below to create one.
 
 ### Create Environment
-1. Downloas Anaconda's Official Website [Here](https://www.anaconda.com/distribution/)
+1. Downloas Anaconda's Official Website [[Here](https://www.anaconda.com/distribution/)]
 2. Install Anaconda
 ```
 cd to/download/path
@@ -19,10 +19,14 @@ conda create --name py36 python=3.6
 conda activte py36
 ```
 ## Yolov3
-Download yolov3 and darknet we need. See more detail [Here](https://pjreddie.com/darknet/yolo/)
+Download yolov3 and darknet we need. See more detail [[Here](https://pjreddie.com/darknet/yolo/)]
 
-1.
-
+1. If you don't already have Darknet installed, folllow [this](https://pjreddie.com/darknet/install/). Or instead of reading all that just run
+```
+git clone https://github.com/pjreddie/darknet.git
+cd darknet
+make
+```
 
 
 
