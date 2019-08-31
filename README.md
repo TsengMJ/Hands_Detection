@@ -51,23 +51,37 @@ wget https://pjreddie.com/media/files/darknet53.conv.74
 ## Preparing Data
 Download our processed data or you can follow this [article ](https://medium.com/@manivannan_data/how-to-train-yolov2-to-detect-custom-objects-9010df784f36) to customize data
 
-Download our data
-```
-cd path/to/darknet
-git clone https://github.com/TsengMJ/Hands_Detection.git
 
-```
-
-[Note]: The date format is 
+[Note]: The date format is
 `
 <class> <x> <y> <w> <h>
 `
-
 * class: Integer, represent the class you write in the classes.txt. 
 * x: Float, represent the **center** of the object in Width. -> x = absolute_x / image_width
 * y: Float, represent the object in Height. -> y = absolute_y / image_height
 * w: Float, represent the object's Width. -> w = object_width / image_width
 * h: Float, represent the object's Height. -> h = object_height / image_height
+
+
+1. Download our data
+```
+cd path/to/darknet
+git clone https://github.com/TsengMJ/Hands_Detection.git
+cd Hands_Detection/; cp hand.data ../cfg/hand.data
+cp hand-yolov3.cfg ../cfg/hand-yolov3.cfg
+python Data/process.py
+```
+Then you will get train.txt and test.txt in Data folder
+
+2. Setting config files
+```
+cd ../cfg
+vim hand.data 
+  ## Set train and valid to the train.txt and test.txt
+  ## Set names to hand.names in Data folder
+  ## Set backup to a clean folder for saving trained weight
+```
+
 
 
 
