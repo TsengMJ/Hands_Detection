@@ -49,7 +49,14 @@ wget https://pjreddie.com/media/files/darknet53.conv.74
 ```
 
 ## Preparing Data
-Recommand this article [[Here](https://medium.com/@manivannan_data/how-to-train-yolov2-to-detect-custom-objects-9010df784f36)]
+Download our processed data or you can follow this [article ](https://medium.com/@manivannan_data/how-to-train-yolov2-to-detect-custom-objects-9010df784f36) to customize data
+
+Download our data
+```
+cd path/to/darknet
+git clone https://github.com/TsengMJ/Hands_Detection.git
+
+```
 
 [Note]: The date format is 
 `
