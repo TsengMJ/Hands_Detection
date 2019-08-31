@@ -1,5 +1,5 @@
 # Hands_Detection
-We Present yolo based hand tracking. 
+We Present a yolo based real-time(GPU) hand tracking. 
 
 ## Preparation 
 Plz make sure you are have an python3.6 environment or folllow the steps below to create one.
@@ -20,11 +20,11 @@ conda activte py36
 conda install jupyter
 ```
 
-## TsesorFlow-Gpu and Cuda
+### TsesorFlow-Gpu and Cuda
 Make sure you follow the steps [Here](https://www.tensorflow.org/install/gpu) carefully
 
 
-## OpenCV
+### OpenCV
 Make sure you follow the steps [Here](https://docs.opencv.org/4.1.1/d2/de6/tutorial_py_setup_in_ubuntu.html) carefully.
 Also install opencv in your environment
 ```
@@ -33,16 +33,31 @@ conda install -c conda-forge opencv
 ```
 
 
-## Yolov3
+### YOLOv3
 Download yolov3 and darknet we need. See more detail [[Here](https://pjreddie.com/darknet/yolo/)]
 
 1. If you don't already have Darknet installed, folllow [this](https://pjreddie.com/darknet/install/). Or instead of reading all that just run
 ```
 git clone https://github.com/pjreddie/darknet.git
 cd darknet
+vim Makefile## SET GPU=1, OPENCV=1
 make
 ```
+2. Download pretrained darknet-weight
+```
+wget https://pjreddie.com/media/files/darknet53.conv.74
+```
 
+## Preparing Data
+Recommand this article [[Here](https://medium.com/@manivannan_data/how-to-train-yolov2-to-detect-custom-objects-9010df784f36)]
+
+[Note]: The date format is 
+`
+class x y w h
+`
+
+
+https://medium.com/@manivannan_data/how-to-train-yolov3-to-detect-custom-objects-ccbcafeb13d2
 
 
 
