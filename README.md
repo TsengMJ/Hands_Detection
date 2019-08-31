@@ -82,29 +82,28 @@ vim hand.data
   ## Set backup to a clean folder for saving trained weight
 ```
 
+More detail [Here](https://medium.com/@manivannan_data/how-to-train-yolov3-to-detect-custom-objects-ccbcafeb13d2).
 
-
-
-
-https://medium.com/@manivannan_data/how-to-train-yolov3-to-detect-custom-objects-ccbcafeb13d2
-
-
-
-
-
-
-
-
-
-We gonna use opencv to control cameras 
-
----
-Install uvcdynctrl
+## Training 
+Start training 
 ```
-sudo apt install uvcdynctrl
+cd path/to/darknet
+sudo ./darknet detector train cfg/hand.data cfg/hand-yolov3.cfg darknet53.conv.74
+```
+Might wait for at least 1hr to cancel the training
+
+
+## Testing 
+Plz connect your camera first. Then
+```
+./darknet detector demo cfg/hand.data cfg/hand-yolov3.cfg <trained-weight>
 ```
 
-Use uvcdynctrl to get your camera's resolution
-```
-uvcdynctrl -f
-```
+
+
+
+
+
+
+
+
