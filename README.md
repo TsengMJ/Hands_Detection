@@ -53,8 +53,16 @@ Recommand this article [[Here](https://medium.com/@manivannan_data/how-to-train-
 
 [Note]: The date format is 
 `
-class x y w h
+<class> <x> <y> <w> <h>
 `
+
+* class: Integer, represent the class you write in the classes.txt. 
+* x: Float, represent the **center** of the object in Width. -> x = absolute_x / image_width
+* y: Float, represent the object in Height. -> y = absolute_y / image_height
+* w: Float, represent the object's Width. -> w = object_width / image_width
+* h: Float, represent the object's Height. -> h = object_height / image_height
+
+
 
 
 https://medium.com/@manivannan_data/how-to-train-yolov3-to-detect-custom-objects-ccbcafeb13d2
