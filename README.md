@@ -99,6 +99,7 @@ Plz connect your camera first. Then
 ./darknet detector demo cfg/hand.data cfg/hand-yolov3.cfg <trained-weight>
 ```
 
+## Result
 
 
 
