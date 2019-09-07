@@ -100,7 +100,6 @@ Plz connect your camera first. Then
 ```
 
 ## Result
-![](demo/demo_1.png)
-![](demo/demo_2.png)
+![](demo/demo_1.png) ![](demo/demo_2.png)
 ![](demo/demo_3.gif)
 
